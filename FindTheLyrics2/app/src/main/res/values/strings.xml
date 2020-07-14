@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Find The Lyrics</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_map">Find Lyrics</string>
+    <string name="action_guess">Guess The Song!</string>
+    <string name="action_achievements">Achievements</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <string name="toggle_notifications">Toggle notifications</string>
+    <string name="volume">Volume</string>
+    <string name="title_activity_achievements">Achievements</string>
+    <string name="title_activity_guess">Guess The Song</string>
+    <string name="title_activity_maps">Find the Song</string>
+    <string name="current">Current</string>
+    <string name="classic">Classic</string>
+    <string name="home_button_settings">Settings</string>
+    <string name="toggle_button">ToggleButton</string>
+    <string name="home_button_mode">Select Mode Below:</string>
+    <string name="descriptor_logo">Logo</string>
+    <string name="descriptor_play_button">play_button</string>
+    <string name="give_up_button">Give Up</string>
+    <string name="guess_button">Guess Button</string>
+    <string name="streaks_button">Streaks Button</string>
+    <string name="guess_first_toast">guess a song correctly first!</string>
+    <string name="response_correct">Correct!</string>
+    <string name="response_wrong">Wrong :(</string>
+    <string name="display_text_collect_first">Collect a lyric first!</string>
+    <string name="path_classic">classic</string>
+    <string name="path_current">current</string>
+    <string name="response_picked_up_lyric">You picked up a lyric!</string>
+    <string name="response_turn_on_location">Turn on Locations please</string>
+
+    <!-- Kotlin class externalisation -->
+
+</resources>

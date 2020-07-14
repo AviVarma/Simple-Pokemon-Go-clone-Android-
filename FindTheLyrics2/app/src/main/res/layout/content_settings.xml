@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settigs_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/colorBackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SettingsActivity"
+    tools:layout_editor_absoluteY="56dp"
+    tools:showIn="@layout/activity_settings">
+
+    <Switch
+        android:id="@+id/notifications_switch"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/toggle_notifications"
+        android:thumbTint="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_volume"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text_volume"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/volume"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notifications_switch" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

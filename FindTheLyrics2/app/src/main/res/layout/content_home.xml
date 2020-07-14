@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/colorBackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_home">
+
+    <ImageView
+        android:id="@+id/image_home"
+        android:layout_width="406dp"
+        android:layout_height="355dp"
+        android:contentDescription="@string/descriptor_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        app:srcCompat="@drawable/globe" />
+
+    <Button
+        android:id="@+id/button_settings"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="208dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/colorAccent"
+        android:elevation="10dp"
+        android:onClick="settingsButton"
+        android:text="@string/home_button_settings"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/colorBackground"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.653" />
+
+    <Button
+        android:id="@+id/button_achievements"
+        android:layout_width="208dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:elevation="10dp"
+        android:text="@string/home_button_mode"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/colorBackground"
+        android:textSize="16sp"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_settings" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="208dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:checked="false"
+        android:text="@string/toggle_button"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/colorBackground"
+        android:textOff="@string/current"
+        android:textOn="@string/classic"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_achievements"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/button_play"
+        android:layout_width="34dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="17dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/descriptor_play_button"
+        android:elevation="10dp"
+        android:onClick="playButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton"
+        app:layout_constraintTop_toBottomOf="@+id/button_achievements"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_send_black_24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

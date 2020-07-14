@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/guess_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/colorBackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".GuessActivity"
+    tools:layout_editor_absoluteY="56dp"
+    tools:showIn="@layout/activity_guess">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_lyrics"
+        android:layout_width="412dp"
+        android:layout_height="304dp"
+        android:backgroundTint="@color/colorBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/recycler_view_guess" />
+
+    <EditText
+        android:id="@+id/input_guess"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_lyrics"
+        android:importantForAutofill="no" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/guess_button"
+        android:onClick="imageButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/input_guess"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_lyrics"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_send_black_24dp" />
+
+    <Button
+        android:id="@+id/give_up_button"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="giveUpButton"
+        android:text="@string/give_up_button"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_guess"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/streak_box"
+        android:layout_width="163dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="208dp"
+        android:ems="10"
+        android:inputType="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/give_up_button"
+        app:layout_constraintVertical_bias="0.0"
+        android:importantForAutofill="no" />
+
+    <ImageButton
+        android:id="@+id/streak_view"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/colorBackground"
+        android:contentDescription="@string/streaks_button"
+        android:onClick="streaksButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/give_up_button"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_whatshot_orange_24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
